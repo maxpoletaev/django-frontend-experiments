@@ -7,7 +7,7 @@ var apps = [
   'blog'
 ];
 
-project = new django.Project(gulp, apps, __dirname);
+var project = new django.Project(gulp, apps, __dirname);
 project.discoverApps();
 
 var sources = {
