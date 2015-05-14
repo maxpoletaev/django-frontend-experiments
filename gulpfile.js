@@ -31,8 +31,8 @@ gulp.task('js', function() {
 });
 
 project.task('watch', function() {
-  gulp.watch(sources.app.css, ['css'])
-  gulp.watch(sources.app.js, ['css'])
+  gulp.watch(sources.app.css, ['css']);
+  gulp.watch(sources.app.js, ['js']);
 });
 
 project.task('default', ['css', 'js']);
