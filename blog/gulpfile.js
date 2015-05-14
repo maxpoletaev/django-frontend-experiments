@@ -1,6 +1,6 @@
 var concat = require('gulp-concat')
   , stylus = require('gulp-stylus')
-  , django = require('gulp-django-utils');
+  , django = require('gulp-util-django');
 
 var sources = {
   css: ['./static/blog/*.styl']

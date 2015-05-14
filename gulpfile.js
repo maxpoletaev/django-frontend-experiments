@@ -1,7 +1,7 @@
 var gulp = require('gulp')
   , stylus = require('gulp-stylus')
   , concat = require('gulp-concat')
-  , django = require('gulp-django-utils');
+  , django = require('gulp-util-django');
 
 var apps = [
   'blog'
