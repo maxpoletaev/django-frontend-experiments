@@ -1,5 +1,4 @@
-var gulp = require('gulp')
-  , stylus = require('gulp-stylus')
+var stylus = require('gulp-stylus')
   , concat = require('gulp-concat')
   , django = require('gulp-util-django');
 
@@ -7,7 +6,7 @@ var apps = [
   'blog'
 ];
 
-var project = new django.Project(gulp, apps, __dirname);
+var project = new django.Project(apps);
 project.discoverApps();
 
 var sources = {
