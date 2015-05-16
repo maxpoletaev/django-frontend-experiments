@@ -16,5 +16,9 @@ module.exports = function(project, gulp) {
       .pipe(app.dest('static/blog/build'));
   });
 
+  app.task('watch', function() {
+    app.watch(sources.css, ['css']);
+  });
+
   app.task('default', ['css']);
 };

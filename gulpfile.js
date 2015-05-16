@@ -17,22 +17,22 @@ var sources = {
   }
 };
 
-gulp.task('css', function() {
+project.task('css', function() {
   project.src(sources.app.css)
     .pipe(stylus())
     .pipe(concat('bundle.css'))
     .pipe(project.dest('./static/build'));
 });
 
-gulp.task('js', function() {
+project.task('js', function() {
   project.src(sources.app.js)
     .pipe(concat('bundle.js'))
     .pipe(project.dest('./static/build'));
 });
 
-project.task('watch', function() {
-  gulp.watch(sources.app.css, ['css']);
-  gulp.watch(sources.app.js, ['js']);
+project.task('watch', ['css', 'js'], function() {
+  project.watch(sources.app.css, ['css']);
+  project.watch(sources.app.js, ['js']);
 });
 
 project.task('default', ['css', 'js']);
