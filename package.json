@@ -4,6 +4,6 @@
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-stylus": "^2.0.1",
-    "zenwalker/gulp-util-django": "*"
+    "zenwalker/gulp-django": "*"
   }
 }
