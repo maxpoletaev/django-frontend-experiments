@@ -1,6 +1,6 @@
-var concat = require('gulp-concat')
-  , stylus = require('gulp-stylus')
-  , django = require('gulp-django');
+var django = require('gulp-django-utils')
+  , concat = require('gulp-concat')
+  , stylus = require('gulp-stylus');
 
 module.exports = function(project) {
   var app = new django.Application('blog', project);

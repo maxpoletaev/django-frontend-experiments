@@ -3,7 +3,7 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
-    "gulp-stylus": "^2.0.1",
-    "zenwalker/gulp-django": "*"
+    "gulp-django-utils": "git://github.com/zenwalker/gulp-django-utils.git",
+    "gulp-stylus": "^2.0.1"
   }
 }

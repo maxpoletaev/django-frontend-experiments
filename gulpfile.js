@@ -1,6 +1,6 @@
-var stylus = require('gulp-stylus')
-  , concat = require('gulp-concat')
-  , django = require('gulp-django');
+var django = require('gulp-django-utils')
+  , stylus = require('gulp-stylus')
+  , concat = require('gulp-concat');
 
 var apps = [
   'blog'
@@ -29,7 +29,7 @@ project.task('js', function() {
     .pipe(project.dest('./static/build'));
 });
 
-project.task('watch', ['css', 'js'], function() {
+project.task('watch', function() {
   project.watch(sources.app.css, ['css']);
   project.watch(sources.app.js, ['js']);
 });
